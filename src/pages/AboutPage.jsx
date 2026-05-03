@@ -8,6 +8,21 @@ import PageBanner from "../components/ui/PageBanner";
 import { TextBlock } from "../components/ui/TextBlockEffect";
 import CardReveal from "../components/ui/CardReveal";
 
+const renderFormattedText = (text) => {
+  if (!text) return null;
+  const parts = text.split(/(\*\*.*?\*\*)/g);
+  return parts.map((part, i) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return (
+        <strong key={i} className="text-slate-900 font-extrabold">
+          {part.slice(2, -2)}
+        </strong>
+      );
+    }
+    return part;
+  });
+};
+
 const AboutPage = ({
   lang,
   personal,
@@ -57,7 +72,7 @@ const AboutPage = ({
                 <div className="space-y-8">
                   <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-medium">
                     <TextBlock blockColor="#475569" className="block">
-                      {about.text}
+                      {renderFormattedText(about.text)}
                     </TextBlock>
                   </p>
                   

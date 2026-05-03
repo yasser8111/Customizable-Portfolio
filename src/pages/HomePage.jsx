@@ -17,6 +17,21 @@ const ArrowIcon = ({ size = 16, className = "" }) => (
   />
 );
 
+const renderFormattedText = (text) => {
+  if (!text) return null;
+  const parts = text.split(/(\*\*.*?\*\*)/g);
+  return parts.map((part, i) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return (
+        <strong key={i} className="text-slate-900 font-extrabold">
+          {part.slice(2, -2)}
+        </strong>
+      );
+    }
+    return part;
+  });
+};
+
 const HomePage = ({
   lang,
   setLang,
@@ -213,7 +228,7 @@ const HomePage = ({
                 </h3>
                 <p className="text-base md:text-lg leading-relaxed text-slate-500 mb-8">
                   <TextBlock blockColor="#cbd5e1" className="block">
-                    {about.text}
+                    {renderFormattedText(about.text)}
                   </TextBlock>
                 </p>
 
