@@ -62,6 +62,7 @@ const Navbar = ({
               <Button
                 onClick={onBack}
                 variant="primary"
+                size="sm"
                 icon={({ size, className }) => (
                   <MaterialIcon
                     icon="arrow_back"
@@ -70,7 +71,7 @@ const Navbar = ({
                   />
                 )}
                 iconPosition="start"
-                className="uppercase"
+                className="uppercase text-[10px] tracking-widest"
               >
                 {backText}
               </Button>

@@ -47,7 +47,7 @@ const AboutPage = ({
           <section>
             <div className="grid grid-cols-1 lg:grid-cols-12">
               {/* Left Column: Story */}
-              <div className="lg:col-span-7 py-16 px-6 md:px-12">
+              <div className="lg:col-span-7 py-10 px-4 md:px-12">
                 <div className="flex items-center gap-3 mb-10 text-slate-400">
                   <MaterialIcon icon="lightbulb" size={20} />
                   <span className="text-xs font-bold uppercase tracking-[0.3em]">

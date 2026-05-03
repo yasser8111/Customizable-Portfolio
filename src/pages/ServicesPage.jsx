@@ -136,7 +136,7 @@ const ServicesPage = ({
 
                   {/* ── Right / Left: feature list ────────────────────────── */}
                   <div
-                    className={`flex flex-col justify-center p-10 md:p-16 ${
+                    className={`flex flex-col justify-center p-6 md:p-16 ${
                       isEven ? "order-2" : "order-2 lg:order-1"
                     }`}
                     style={{ backgroundColor: p.bgLight }}

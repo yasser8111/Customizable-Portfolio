@@ -65,7 +65,7 @@ const HomePage = ({
           <section className="relative overflow-hidden min-h-[calc(100dvh-76px)] bg-white flex items-center">
             <div className="max-w-[1400px] mx-auto w-full grid grid-cols-1 md:grid-cols-[6fr_4fr] items-stretch min-h-[calc(100dvh-65px)] relative z-10">
               {/* Left: Text Content */}
-              <div className="relative z-10 w-full flex items-center px-6 md:px-12 py-20 lg:py-0">
+              <div className="relative z-10 w-full flex items-center px-4 md:px-12 py-12 lg:py-0">
                 <div className="flex flex-col items-center text-center md:items-start md:text-start w-full max-w-4xl">
                   <h2 className="text-[clamp(2rem,6vw,4rem)] font-black tracking-tighter leading-[1.2] mb-8 text-slate-900 text-balance max-w-3xl mx-auto md:mx-0">
                     {hero.title.split("\n").map((line, i) => (
@@ -173,7 +173,7 @@ const HomePage = ({
           <section id="projects">
             <div className="w-full">
               {/* Section Header */}
-              <div className=" md:p-12 p-8">
+              <div className="md:p-12 p-4 pt-8">
                 <h3 className="text-sm font-bold uppercase tracking-widest text-slate-900">
                   <TextBlock blockColor="#2563eb">
                     {sections.selectedWorks}
@@ -205,7 +205,7 @@ const HomePage = ({
               {/* About */}
               <div
                 id="about"
-                className="md:col-span-5 py-16 ps-6 md:ps-12 pe-12"
+                className="md:col-span-5 py-10 ps-4 md:ps-12 pe-4"
               >
                 <h3 className="text-sm font-bold uppercase tracking-widest text-slate-900 mb-8">
                   <TextBlock blockColor="#2563eb">{sections.about}</TextBlock>
@@ -272,7 +272,7 @@ const HomePage = ({
           <section id="services" className="bg-white">
             <div className="grid grid-cols-1 md:grid-cols-12">
               <div
-                className="md:col-span-3 py-8 md:py-16 ps-6 md:ps-12 pe-8 flex flex-row md:flex-col justify-between items-center md:items-start gap-4"
+                className="md:col-span-3 py-6 md:py-16 ps-4 md:ps-12 pe-4 flex flex-row md:flex-col justify-between items-center md:items-start gap-4"
                 dir="ltr"
               >
                 <h3 className="text-sm font-bold uppercase tracking-widest text-slate-900 md:mb-8">
@@ -321,7 +321,7 @@ const HomePage = ({
                   return (
                     <div
                       key={i}
-                      className="p-8 md:p-12 cursor-pointer transition-all duration-500"
+                      className="p-6 md:p-12 cursor-pointer transition-all duration-500"
                       style={{ backgroundColor: palette.bg }}
                     >
                       <div className="mb-8">

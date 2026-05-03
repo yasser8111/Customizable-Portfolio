@@ -3,11 +3,11 @@ import ProjectButtons from "../components/projects/ProjectButtons";
 
 const ProjectDetailsPage = ({ project, onBack, lang, footerText, buttons, personal }) => {
   return (
-    <div className="max-w-[1400px] mx-auto w-full px-6 md:px-12 min-h-screen flex flex-col">
+    <div className="max-w-[1400px] mx-auto w-full px-4 md:px-12 min-h-screen flex flex-col">
       <NavBack personal={personal} onBack={onBack} backText={buttons.backToHome} lang={lang} />
 
       <main className="flex-1">
-        <section className="py-12 md:py-16 lg:py-24 edge-to-edge">
+        <section className="py-8 md:py-16 lg:py-24 edge-to-edge">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div className="flex flex-col">
               <h1 className="text-[clamp(2.5rem,5vw,4rem)] font-extrabold tracking-tighter text-slate-900 leading-[1.1] mb-6">
