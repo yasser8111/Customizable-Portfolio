@@ -211,16 +211,23 @@ const HomePage = ({
                 <h3 className="text-sm font-bold uppercase tracking-widest text-slate-900 mb-8">
                   <TextBlock blockColor="#2563eb">{sections.about}</TextBlock>
                 </h3>
-                {about.map((paragraph, i) => (
-                  <p
-                    key={i}
-                    className="text-base md:text-lg leading-relaxed text-slate-500 mb-6 last:mb-0"
-                  >
-                    <TextBlock blockColor="#cbd5e1" className="block">
-                      {paragraph}
-                    </TextBlock>
-                  </p>
-                ))}
+                <p className="text-base md:text-lg leading-relaxed text-slate-500 mb-8">
+                  <TextBlock blockColor="#cbd5e1" className="block">
+                    {about.text}
+                  </TextBlock>
+                </p>
+                <ul className="space-y-4 mb-8">
+                  {about.points.map((point, i) => (
+                    <li key={i} className="flex gap-3 items-start text-base leading-relaxed text-slate-500">
+                      <div className="mt-1">
+                        <MaterialIcon icon="check" size={18} className="text-blue-600" />
+                      </div>
+                      <div>
+                        <strong className="text-slate-900">{point.title}</strong> {point.desc}
+                      </div>
+                    </li>
+                  ))}
+                </ul>
                 <div className="mt-10 flex justify-end" dir="ltr">
                   <Link to="/about">
                     <Button

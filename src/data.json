@@ -49,10 +49,27 @@
       "title": "Fast, clear websites,\nbuilt to grow with your business.",
       "subtitle": "I help businesses and SMEs build fast, user-friendly, and scalable websites."
     },
-    "about": [
-      "I focus on building fast, user-friendly websites with clean designs that reflect your brand identity and attract customers.",
-      "I provide practical, well-thought-out solutions—not just beautiful designs, but websites that serve your business goals and scale with you."
-    ],
+    "about": {
+      "text": "I am a UI/UX designer and frontend developer who helps businesses build a strong digital presence. I believe a successful website is more than just a beautiful interface; it's an effective tool for your business growth. I focus on merging modern design with high performance to deliver a product that serves your commercial goals.",
+      "points": [
+        {
+          "title": "Results-Driven Design:",
+          "desc": "Comfortable interfaces focused on improving user experience and guiding visitors smoothly towards conversion."
+        },
+        {
+          "title": "Ultra-Fast Performance:",
+          "desc": "Writing clean and lightweight code ensures your website loads exceptionally fast on all devices."
+        },
+        {
+          "title": "Goal-Oriented Solutions:",
+          "desc": "Every UI element is designed to serve your brand identity and increase customer engagement."
+        },
+        {
+          "title": "Ready to Scale:",
+          "desc": "A flexible codebase that is easily scalable to keep up with the future growth and evolution of your business."
+        }
+      ]
+    },
     "whyChooseMe": [
       {
         "title": "Clear User Experience",
@@ -232,10 +249,27 @@
       "title": "مواقع سريعة، واضحة،\nومبنية لـ تنمو مع عملك.",
       "subtitle": "أساعد الشركات والمشاريع الصغيرة والمتوسطة على بناء مواقع سهلة الاستخدام، سريعة، وقابلة للتوسع."
     },
-    "about": [
-      "أركز على بناء مواقع سريعة وسهلة الاستخدام، بتصميم نظيف يعكس هوية مشروعك ويساعدك في جذب العملاء.",
-      "أقدم حلول عملية ومدروسة، ليس فقط مجرد تصميم جميل، بل موقع يخدم أهداف عملك ويتوسع معك."
-    ],
+    "about": {
+      "text": "أنا مطور ومصمم واجهات (UI/UX) أساعد الشركات والمشاريع على بناء حضور رقمي قوي. أؤمن أن الموقع الناجح يتجاوز كونه مجرد شكل جميل، فهو أداة فعالة لنمو أعمالك. أركز في عملي على دمج التصميم العصري مع الأداء العالي لتقديم منتج يخدم أهدافك التجارية.",
+      "points": [
+        {
+          "title": "تصميم موجه للنتائج:",
+          "desc": "واجهات مريحة تركز على تحسين تجربة المستخدم وتوجيه الزائر بسلاسة نحو اتخاذ القرار."
+        },
+        {
+          "title": "أداء فائق السرعة:",
+          "desc": "كتابة أكواد نظيفة وخفيفة تضمن تحميل موقعك بسرعة استثنائية على جميع الأجهزة."
+        },
+        {
+          "title": "حلول تخدم أهدافك:",
+          "desc": "كل عنصر في الواجهة يتم تصميمه وتوظيفه لخدمة هوية مشروعك وزيادة تفاعل عملائك."
+        },
+        {
+          "title": "جاهزية للتوسع:",
+          "desc": "أساس برمجي مرن قابل للتطوير بسهولة ليواكب نمو وتطور أعمالك مستقبلاً."
+        }
+      ]
+    },
     "whyChooseMe": [
       {
         "title": "تجربة مستخدم مباشرة",
