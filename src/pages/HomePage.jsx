@@ -319,7 +319,7 @@ const HomePage = ({
                     <div
                       key={i}
                       onClick={() => navigate(`/services#${createSlug(service.title)}`)}
-                      className="p-6 md:p-12 cursor-pointer transition-all duration-500 hover:scale-[1.02] active:scale-95 group"
+                      className="p-6 md:p-12 cursor-pointer group"
                       style={{ backgroundColor: palette.bg }}
                     >
                       <div className="mb-8">
