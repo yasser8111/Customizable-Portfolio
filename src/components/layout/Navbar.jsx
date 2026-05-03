@@ -153,10 +153,8 @@ const Navbar = ({
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 bg-white z-[50] transition-all duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] sm:hidden ${
-          isMenuOpen
-            ? "translate-y-0 opacity-100"
-            : "-translate-y-full opacity-0"
+        className={`fixed inset-0 bg-white z-[50] transition-transform duration-500 ease-[cubic-bezier(0.77,0,0.175,1)] sm:hidden ${
+          isMenuOpen ? "translate-y-0" : "-translate-y-full"
         }`}
       >
         <div className="flex flex-col items-center justify-center h-full gap-8 px-6 text-center">

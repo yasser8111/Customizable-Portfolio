@@ -45,7 +45,7 @@ const AllProjectsPage = ({ projects, lang, buttons, gallery, nav, personal }) =>
         dir={lang === "ar" ? "rtl" : "ltr"}
       >
         <NavBack
-          onBack={() => navigate(-1)}
+          onBack={() => navigate("/")}
           backText={buttons.backToHome}
           lang={lang}
           personal={personal}

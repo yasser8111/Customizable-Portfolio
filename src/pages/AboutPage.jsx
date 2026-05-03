@@ -28,7 +28,7 @@ const AboutPage = ({
     >
       <div className="max-w-[1400px] mx-auto w-full min-h-screen flex flex-col">
         <NavBack
-          onBack={() => navigate(-1)}
+          onBack={() => navigate("/")}
           backText={buttons.backToHome}
           lang={lang}
           personal={personal}
