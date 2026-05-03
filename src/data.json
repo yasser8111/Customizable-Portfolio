@@ -31,8 +31,7 @@
       "philosophy": "Philosophy",
       "myStory": "My Story",
       "technicalStack": "Technical Stack",
-      "certifications": "Certifications & Achievements",
-      "whyChooseMe": "Why Choose Me?"
+      "certifications": "Certifications & Achievements"
     },
     "personal": {
       "nickname": "YSR",
@@ -70,24 +69,6 @@
         }
       ]
     },
-    "whyChooseMe": [
-      {
-        "title": "Clear User Experience",
-        "desc": "I design intuitive interfaces that guide your customers to what they need clearly and without complexity."
-      },
-      {
-        "title": "Lightning Fast Performance",
-        "desc": "I build lightweight, fast-loading websites to ensure no visitor is lost due to slow loading times."
-      },
-      {
-        "title": "Modern & Professional Design",
-        "desc": "I focus on visual details to give your project a unique interface that reflects your identity at first glance."
-      },
-      {
-        "title": "Flexible & Scalable Code",
-        "desc": "I use modern technologies that ensure your website is easy to develop and scale with new features seamlessly."
-      }
-    ],
     "philosophy": "Simplicity in Code, Clarity in design.\nI believe that complexity is the enemy of progress. In code, simplicity means maintainability and performance. In design, clarity means an intuitive experience where the user never has to guess. My approach is to strip away the noise until only what is essential remains.",
     "certificates": [
       {
@@ -230,8 +211,7 @@
       "philosophy": "فلسفتي",
       "myStory": "قصتي",
       "technicalStack": "المهارات التقنية",
-      "certifications": "الشهادات والإنجازات",
-      "whyChooseMe": "لماذا تختارني؟"
+      "certifications": "الشهادات والإنجازات"
     },
     "personal": {
       "nickname": "YSR",
@@ -270,24 +250,6 @@
         }
       ]
     },
-    "whyChooseMe": [
-      {
-        "title": "تجربة مستخدم مباشرة",
-        "desc": "أصمم واجهات مريحة ترشد عملاءك لما يبحثون عنه بوضوح وبدون تعقيد."
-      },
-      {
-        "title": "أداء سريع وصاروخي",
-        "desc": "أبني مواقع خفيفة وسريعة التحميل لضمان عدم خسارة أي زائر بسبب البطء."
-      },
-      {
-        "title": "تصاميم احترافية عصرية",
-        "desc": "أهتم بالتفاصيل البصرية لأمنح مشروعك واجهة مميزة تعكس هويتك من النظرة الأولى."
-      },
-      {
-        "title": "كود قابل للتوسع",
-        "desc": "أستخدم تقنيات حديثة تضمن لك سهولة تطوير الموقع وإضافة ميزات جديدة مستقبلاً."
-      }
-    ],
     "philosophy": "بساطة في الكود، وضوح في التصميم. أؤمن أن التعقيد هو عدو التقدم. في الكود، البساطة تعني سهولة الصيانة والأداء العالي. في التصميم، الوضوح يعني تجربة بديهية حيث لا يضطر المستخدم للتخمين أبداً. نهجي هو إزالة كل الضوضاء حتى يتبقى فقط ما هو ضروري ومفيد.",
     "certificates": [
       {

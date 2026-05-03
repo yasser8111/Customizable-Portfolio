@@ -32,7 +32,6 @@ const HomePage = ({
   nav,
   buttons,
   sections,
-  whyChooseMe,
   isUnderConstruction,
   isMenuOpen,
   setIsMenuOpen,
