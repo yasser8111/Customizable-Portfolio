@@ -15,7 +15,7 @@ const ProjectCard = ({ project, onSelectProject, isFirst = false }) => {
             {project.year}
           </span>
         </div>
-        <p className="text-slate-500 font-semibold mb-4 text-lg leading-relaxed line-clamp-2">
+        <p className="text-base md:text-lg text-slate-500 font-semibold mb-4 leading-relaxed line-clamp-2">
           {project.desc}
         </p>
         <p className="text-sm font-semibold text-blue-600 tracking-wide">

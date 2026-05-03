@@ -8,7 +8,7 @@ const ContactSection = ({ personal, sections, lang }) => {
     <section id="contact" className="pt-24 pb-12 md:py-24 px-6 md:px-12 bg-white">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
         <div>
-          <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-8 leading-[1.1] text-slate-900 flex flex-col items-start">
+          <h2 className="text-[clamp(2rem,5vw,3.75rem)] font-black tracking-tighter mb-8 leading-[1.1] text-slate-900 flex flex-col items-start">
             {sections.letsBuild.split("\n").map((line, i) => (
               <TextBlock key={i} blockColor="#2563eb" className="block">
                 {line}
@@ -17,7 +17,7 @@ const ContactSection = ({ personal, sections, lang }) => {
           </h2>
           <a
             href={`mailto:${personal.email}`}
-            className="inline-flex items-center gap-3 text-lg sm:text-xl font-bold text-blue-600 hover:text-blue-700 transition-colors group"
+            className="inline-flex items-center gap-3 text-base md:text-lg font-bold text-blue-600 hover:text-blue-700 transition-colors group"
           >
             <i className="ri-mail-line"></i>
             {personal.email}

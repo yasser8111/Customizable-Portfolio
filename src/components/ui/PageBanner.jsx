@@ -14,12 +14,12 @@ const PageBanner = ({
 
 
       <div className="relative z-10 max-w-3xl">
-        <h1 className="text-5xl md:text-7xl font-black tracking-tighter leading-tight text-slate-900 mb-8">
+        <h1 className="text-[clamp(2.5rem,6vw,4.5rem)] font-black tracking-tighter leading-tight text-slate-900 mb-8">
           <TextBlock blockColor={titleColor} className="block">
             {title}
           </TextBlock>
         </h1>
-        <p className="text-xl md:text-2xl text-slate-500 font-medium leading-relaxed max-w-2xl">
+        <p className="text-lg sm:text-xl md:text-2xl text-slate-500 font-medium leading-relaxed max-w-2xl">
           <TextBlock blockColor={subtitleColor} className="block">
             {subtitle}
           </TextBlock>

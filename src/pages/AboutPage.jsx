@@ -58,7 +58,7 @@ const AboutPage = ({
                   {about.map((paragraph, i) => (
                     <p
                       key={i}
-                      className="text-xl md:text-2xl text-slate-600 leading-relaxed font-medium"
+                      className="text-lg md:text-xl text-slate-600 leading-relaxed font-medium"
                     >
                       <TextBlock blockColor="#475569" className="block">
                         {paragraph}
@@ -92,7 +92,7 @@ const AboutPage = ({
                               />
                             </div>
 
-                            <h4 className="text-xl font-black text-slate-900 mb-3 leading-tight grow">
+                            <h4 className="text-lg md:text-xl font-black text-slate-900 mb-3 leading-tight grow">
                               {cert.title}
                             </h4>
 

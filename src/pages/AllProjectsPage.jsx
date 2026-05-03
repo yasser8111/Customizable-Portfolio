@@ -8,7 +8,7 @@ import ProjectCard from "../components/projects/ProjectCard";
 import ProjectsGallery from "../components/projects/ProjectsGallery";
 import { createSlug } from "../lib/utils";
 
-const AllProjectsPage = ({ projects, lang, buttons, gallery, nav }) => {
+const AllProjectsPage = ({ projects, lang, buttons, gallery, nav, personal }) => {
   const navigate = useNavigate();
   const [isMobile, setIsMobile] = useState(false);
 
@@ -56,7 +56,7 @@ const AllProjectsPage = ({ projects, lang, buttons, gallery, nav }) => {
             <MaterialIcon icon="desktop_windows" size={40} />
           </div>
 
-          <h1 className="text-3xl font-black text-slate-900 mb-6 leading-tight">
+          <h1 className="text-2xl sm:text-3xl font-black text-slate-900 mb-6 leading-tight">
             {lang === "ar"
               ? "نأسف، هذه الصفحة غير متوفرة"
               : "Sorry, Page Not Available"}

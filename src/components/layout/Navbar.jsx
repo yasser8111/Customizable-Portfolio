@@ -61,7 +61,7 @@ const Navbar = ({
             <div className="flex items-center gap-4">
               <Button
                 onClick={onBack}
-                variant="secondary"
+                variant="primary"
                 icon={({ size, className }) => (
                   <MaterialIcon
                     icon="arrow_back"

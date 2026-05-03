@@ -10,7 +10,7 @@ const ProjectDetailsPage = ({ project, onBack, lang, footerText, buttons, person
         <section className="py-12 md:py-16 lg:py-24 edge-to-edge">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div className="flex flex-col">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tighter text-slate-900 leading-[1.1] mb-6">
+              <h1 className="text-[clamp(2.5rem,5vw,4rem)] font-extrabold tracking-tighter text-slate-900 leading-[1.1] mb-6">
                 {project.title}
               </h1>
               <div className="flex flex-wrap items-center gap-4 mb-8">
@@ -21,7 +21,7 @@ const ProjectDetailsPage = ({ project, onBack, lang, footerText, buttons, person
                   {project.tech}
                 </span>
               </div>
-              <div className="text-lg md:text-xl text-slate-600 leading-relaxed space-y-6">
+              <div className="text-base md:text-lg text-slate-600 leading-relaxed space-y-6">
                 {project.desc.split("\n").map((p, i) => (
                   <p key={i}>{p}</p>
                 ))}

@@ -102,7 +102,7 @@ const ProjectHoverSection = ({
                 "w-full flex flex-col md:flex-row md:items-center justify-between px-6 md:px-12 py-12 cursor-pointer transition-all duration-300 hover:bg-slate-50",
               )}
             >
-              <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 mb-3 md:mb-0">
+              <h2 className="text-[clamp(1.75rem,4vw,3rem)] font-bold tracking-tight text-slate-900 mb-3 md:mb-0">
                 <TextBlock blockColor="#2563eb">{project.title}</TextBlock>
               </h2>
             </Link>

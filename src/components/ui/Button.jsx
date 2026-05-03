@@ -4,20 +4,14 @@
  */
 
 const variants = {
-  primary:
-    "bg-blue-600 text-white shadow-sm",
-  dark:
-    "bg-slate-900 text-white shadow-sm",
+  primary: "bg-blue-600 text-white hover:bg-blue-700 shadow-sm shadow-blue-200",
   secondary:
-    "border-2 border-slate-900 bg-transparent text-slate-900",
-  ghost:
-    "bg-transparent text-slate-600 hover:text-blue-600",
+    "border-2 border-slate-900 bg-transparent text-slate-900 hover:bg-slate-900 hover:text-white",
+  ghost: "bg-transparent text-slate-600 hover:text-blue-600 hover:bg-slate-50",
   outline:
-    "border-2 border-slate-400  bg-transparent text-slate-900",
-  tech:
-    "border border-slate-900 bg-transparent text-slate-900",
-  social:
-    "text-slate-700",
+    "border-2 border-slate-300 bg-transparent text-slate-900 hover:border-slate-900 hover:bg-slate-50/50",
+  tech: "border border-slate-900 bg-transparent text-slate-900 hover:bg-slate-900 hover:text-white",
+  social: "text-slate-700 hover:text-blue-600 transition-colors",
 };
 
 const sizes = {

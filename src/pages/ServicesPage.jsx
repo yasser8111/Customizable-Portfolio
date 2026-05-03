@@ -115,7 +115,7 @@ const ServicesPage = ({
                       </div>
 
                       <h2
-                        className="text-3xl md:text-4xl font-black tracking-tight mb-6"
+                        className="text-[clamp(1.5rem,4vw,2.25rem)] font-black tracking-tight mb-6"
                         style={{ color: p.title }}
                       >
                         <TextBlock blockColor={p.base}>
@@ -124,7 +124,7 @@ const ServicesPage = ({
                       </h2>
 
                       <p
-                        className="text-lg font-medium leading-relaxed max-w-md"
+                        className="text-base md:text-lg font-medium leading-relaxed max-w-md"
                         style={{ color: p.desc }}
                       >
                         <TextBlock blockColor={p.base} className="block">
@@ -157,7 +157,7 @@ const ServicesPage = ({
                             style={{ backgroundColor: p.base }}
                           />
                           <span
-                            className="text-lg font-semibold"
+                            className="text-base sm:text-lg font-semibold"
                             style={{ color: p.title }}
                           >
                             {feat}

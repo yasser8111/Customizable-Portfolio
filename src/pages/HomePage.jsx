@@ -67,7 +67,7 @@ const HomePage = ({
               {/* Left: Text Content */}
               <div className="relative z-10 w-full flex items-center px-6 md:px-12 py-20 lg:py-0">
                 <div className="flex flex-col items-center text-center md:items-start md:text-start w-full max-w-4xl">
-                  <h2 className="text-[clamp(1.75rem,5vw,3.5rem)] font-black tracking-tighter leading-[1.2] mb-8 text-slate-900 text-balance max-w-3xl mx-auto md:mx-0">
+                  <h2 className="text-[clamp(2rem,6vw,4rem)] font-black tracking-tighter leading-[1.2] mb-8 text-slate-900 text-balance max-w-3xl mx-auto md:mx-0">
                     {hero.title.split("\n").map((line, i) => (
                       <span key={i} className="block w-full">
                         <TextBlock blockColor="#2563eb" className="block">
@@ -85,7 +85,7 @@ const HomePage = ({
                     ))}
                   </h2>
 
-                  <div className="text-lg sm:text-xl lg:text-2xl text-slate-600 leading-tight font-medium mb-10 flex flex-col items-center md:items-start gap-1 text-balance mx-auto md:mx-0">
+                  <div className="text-base sm:text-lg lg:text-xl text-slate-600 leading-relaxed font-medium mb-10 flex flex-col items-center md:items-start gap-1 text-balance mx-auto md:mx-0">
                     <TextBlock
                       blockColor="#cbd5e1"
                       className="inline-block py-0"
@@ -213,7 +213,7 @@ const HomePage = ({
                 {about.map((paragraph, i) => (
                   <p
                     key={i}
-                    className="text-lg leading-relaxed text-slate-500 mb-6 last:mb-0"
+                    className="text-base md:text-lg leading-relaxed text-slate-500 mb-6 last:mb-0"
                   >
                     <TextBlock blockColor="#cbd5e1" className="block">
                       {paragraph}
@@ -254,7 +254,7 @@ const HomePage = ({
                           {item.category}
                         </TextBlock>
                       </h4>
-                      <ul className="space-y-3 text-slate-500 font-medium">
+                      <ul className="space-y-3 text-base text-slate-500 font-medium">
                         {item.skills.slice(0, 3).map((skill, j) => (
                           <li key={j}>
                             <TextBlock blockColor="#cbd5e1">{skill}</TextBlock>
@@ -333,7 +333,7 @@ const HomePage = ({
                         </span>
                       </div>
                       <h4
-                        className="text-xl font-bold mb-4"
+                        className="text-xl md:text-2xl font-bold mb-4"
                         style={{ color: palette.title }}
                       >
                         <TextBlock blockColor={palette.base}>
@@ -341,7 +341,7 @@ const HomePage = ({
                         </TextBlock>
                       </h4>
                       <p
-                        className="font-medium leading-relaxed"
+                        className="text-base font-medium leading-relaxed"
                         style={{ color: palette.desc }}
                       >
                         <TextBlock blockColor={palette.base} className="block">
