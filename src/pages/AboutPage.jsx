@@ -7,21 +7,9 @@ import ContactSection from "../components/sections/ContactSection";
 import PageBanner from "../components/ui/PageBanner";
 import { TextBlock } from "../components/ui/TextBlockEffect";
 import CardReveal from "../components/ui/CardReveal";
+import { renderFormattedText } from "../lib/utils";
 
-const renderFormattedText = (text) => {
-  if (!text) return null;
-  const parts = text.split(/(\*\*.*?\*\*)/g);
-  return parts.map((part, i) => {
-    if (part.startsWith("**") && part.endsWith("**")) {
-      return (
-        <strong key={i} className="text-slate-900 font-extrabold">
-          {part.slice(2, -2)}
-        </strong>
-      );
-    }
-    return part;
-  });
-};
+
 
 const AboutPage = ({
   lang,

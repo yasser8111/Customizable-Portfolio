@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate, Link } from "react-router-dom";
-import { createSlug } from "../lib/utils";
+import { createSlug, renderFormattedText } from "../lib/utils";
 import Button from "../components/ui/Button";
 import ProjectHoverSection from "../components/projects/ProjectHoverSection";
 import Navbar from "../components/layout/Navbar";
@@ -17,20 +17,7 @@ const ArrowIcon = ({ size = 16, className = "" }) => (
   />
 );
 
-const renderFormattedText = (text) => {
-  if (!text) return null;
-  const parts = text.split(/(\*\*.*?\*\*)/g);
-  return parts.map((part, i) => {
-    if (part.startsWith("**") && part.endsWith("**")) {
-      return (
-        <strong key={i} className="text-slate-900 font-extrabold">
-          {part.slice(2, -2)}
-        </strong>
-      );
-    }
-    return part;
-  });
-};
+
 
 const HomePage = ({
   lang,
