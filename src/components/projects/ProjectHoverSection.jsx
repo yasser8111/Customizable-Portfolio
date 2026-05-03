@@ -99,7 +99,7 @@ const ProjectHoverSection = ({
                 setModal({ active: true, index });
               }}
               className={cn(
-                "w-full flex flex-col md:flex-row md:items-center justify-between px-6 md:px-12 py-12 border-t border-slate-200 cursor-pointer transition-all duration-300 hover:bg-slate-50",
+                "w-full flex flex-col md:flex-row md:items-center justify-between px-6 md:px-12 py-12 cursor-pointer transition-all duration-300 hover:bg-slate-50",
               )}
             >
               <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 mb-3 md:mb-0">
@@ -107,7 +107,7 @@ const ProjectHoverSection = ({
               </h2>
             </Link>
           ))}
-          <div className="w-full h-px bg-slate-200" />
+          <div className="w-full h-px" />
         </div>
 
         {/* Thumbnail Modal - Viewport relative */}
@@ -151,7 +151,7 @@ const ProjectHoverSection = ({
         <Link
           key={index}
           to={`/projects/${createSlug(project.title)}`}
-          className="flex flex-col border-b border-slate-200 last:border-b-0"
+          className="flex flex-col"
         >
           <div className="w-full px-6 py-8 active:bg-slate-50 transition-colors">
             <h2 className="text-2xl font-bold tracking-tight text-slate-900 mb-2">
@@ -162,7 +162,7 @@ const ProjectHoverSection = ({
                 {project.desc}
               </TextBlock>
             </p>
-            <div className="w-full aspect-video overflow-hidden border border-slate-200 shadow-sm">
+            <div className="w-full aspect-video overflow-hidden border border-slate-400">
               <img
                 src={project.image}
                 alt={project.title}

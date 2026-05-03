@@ -4,9 +4,7 @@ const ProjectCard = ({ project, onSelectProject, isFirst = false }) => {
   return (
     <div
       onClick={() => onSelectProject(project)}
-      className={`flex flex-col md:flex-row md:items-start justify-between py-12 ps-8 pe-6 md:pe-12 border-t border-slate-200 ${
-        isFirst ? "md:border-t-0" : ""
-      } cursor-pointer relative`}
+      className={`flex flex-col md:flex-row md:items-start justify-between py-12 ps-8 pe-6 md:pe-12 cursor-pointer relative`}
     >
       <div className="max-w-2xl relative z-10 flex-1">
         <div className="flex items-center gap-4 mb-3">
@@ -26,7 +24,7 @@ const ProjectCard = ({ project, onSelectProject, isFirst = false }) => {
       </div>
 
       {project.image && (
-        <div className="mt-8 md:mt-0 md:ms-12 w-full md:w-48 h-48 md:h-32 shrink-0 overflow-hidden bg-slate-100 border border-slate-100">
+        <div className="mt-8 md:mt-0 md:ms-12 w-full md:w-48 h-48 md:h-32 shrink-0 overflow-hidden bg-slate-100">
           <img 
             src={project.image} 
             alt={project.title} 

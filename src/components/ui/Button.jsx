@@ -9,11 +9,11 @@ const variants = {
   dark:
     "bg-slate-900 text-white shadow-sm",
   secondary:
-    "bg-slate-100 text-slate-800",
+    "border-2 border-slate-900 bg-transparent text-slate-900",
   ghost:
     "bg-transparent text-slate-600 hover:text-blue-600",
   outline:
-    "border border-slate-200 bg-transparent text-slate-700",
+    "border-2 border-slate-400  bg-transparent text-slate-900",
   tech:
     "border border-slate-900 bg-transparent text-slate-900",
   social:

@@ -10,8 +10,8 @@
       "allProjects": "All Projects"
     },
     "buttons": {
-      "viewProjects": "View Projects",
-      "contactMe": "Contact Me",
+      "viewProjects": "View Real Projects",
+      "contactMe": "Let's Start Your Project",
       "liveDemo": "Live Demo",
       "sourceCode": "Source Code",
       "viewAll": "Explore Projects",
@@ -45,12 +45,12 @@
       }
     },
     "hero": {
-      "title": "Simplicity in Code,\nClarity in design.",
-      "subtitle": "I build digital products that are easy to use,\nfast to load, and built to scale."
+      "title": "Fast, clear websites,\nbuilt to grow with your business.",
+      "subtitle": "I help businesses and SMEs build fast, user-friendly, and scalable websites."
     },
     "about": [
-      "I am a first-year Computer Science student with a focus on frontend development and UI/UX design. I enjoy building clean and practical web interfaces that solve real problems.",
-      "I have worked on several personal projects, including e-commerce websites and experimental tools, focusing on performance, simplicity, and user experience. Currently, I’m improving my skills in JavaScript, React, and system design."
+      "I focus on building fast, user-friendly websites with clean designs that reflect your brand identity and attract customers.",
+      "I provide practical, well-thought-out solutions—not just beautiful designs, but websites that serve your business goals and scale with you."
     ],
     "philosophy": "Simplicity in Code, Clarity in design.\nI believe that complexity is the enemy of progress. In code, simplicity means maintainability and performance. In design, clarity means an intuitive experience where the user never has to guess. My approach is to strip away the noise until only what is essential remains.",
     "certificates": [
@@ -166,15 +166,15 @@
   },
   "ar": {
     "nav": {
-      "about": "نبذة عني",
-      "projects": "المشاريع",
-      "services": "خدمات",
-      "contact": "تواصل معي",
+      "about": "عني",
+      "projects": "أعمالي",
+      "services": "خدماتي",
+      "contact": "تواصل",
       "allProjects": "جميع المشاريع"
     },
     "buttons": {
-      "viewProjects": "عرض المشاريع",
-      "contactMe": "تواصل معي",
+      "viewProjects": "شاهد أمثلة لمواقع حقيقية",
+      "contactMe": "خلنا نبدأ مشروعك",
       "liveDemo": "معاينة مباشرة",
       "sourceCode": "الكود المصدري",
       "viewAll": "استكشف مشاريع",
@@ -209,12 +209,12 @@
       }
     },
     "hero": {
-      "title": "بساطة في الكود،\nوضوح في التصميم.",
-      "subtitle": "أقوم ببناء منتجات رقمية سهلة الاستخدام،\nسريعة التحميل، وقابلة للتوسع."
+      "title": "مواقع سريعة، واضحة،\nومبنية لـ تنمو مع عملك.",
+      "subtitle": "أساعد الشركات والمشاريع الصغيرة والمتوسطة على بناء مواقع سهلة الاستخدام، سريعة، وقابلة للتوسع."
     },
     "about": [
-      "أنا طالب في السنة الأولى في علوم الحاسوب، أركز على تطوير الواجهات الأمامية وتصميم واجهة/تجربة المستخدم (UI/UX). أستمتع ببناء واجهات ويب نظيفة وعملية تحل مشاكل حقيقية.",
-      "عملت على العديد من المشاريع الشخصية، بما في ذلك مواقع التجارة الإلكترونية وأدوات تجريبية، مع التركيز على الأداء، البساطة، وتجربة المستخدم. حاليًا، أقوم بتطوير مهاراتي في JavaScript و React وتصميم الأنظمة."
+      "أركز على بناء مواقع سريعة وسهلة الاستخدام، بتصميم نظيف يعكس هوية مشروعك ويساعدك في جذب العملاء.",
+      "أقدم حلول عملية ومدروسة، ليس فقط مجرد تصميم جميل، بل موقع يخدم أهداف عملك ويتوسع معك."
     ],
     "philosophy": "بساطة في الكود، وضوح في التصميم. أؤمن أن التعقيد هو عدو التقدم. في الكود، البساطة تعني سهولة الصيانة والأداء العالي. في التصميم، الوضوح يعني تجربة بديهية حيث لا يضطر المستخدم للتخمين أبداً. نهجي هو إزالة كل الضوضاء حتى يتبقى فقط ما هو ضروري ومفيد.",
     "certificates": [

@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import MaterialIcon from "../components/ui/MaterialIcon";
-import NavBack from "../components/layout/NavBack";
+import { NavBack } from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import ContactSection from "../components/sections/ContactSection";
 import PageBanner from "../components/ui/PageBanner";
@@ -69,11 +69,12 @@ const ServicesPage = ({
       dir={lang === "ar" ? "rtl" : "ltr"}
       className="min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-600 selection:text-white"
     >
-      <div className="max-w-[1400px] mx-auto w-full border-x border-slate-200 min-h-screen flex flex-col">
+      <div className="max-w-[1400px] mx-auto w-full min-h-screen flex flex-col">
         <NavBack
           onBack={() => navigate(-1)}
           backText={buttons.backToHome}
           lang={lang}
+          personal={personal}
         />
 
         <main className="flex-1">
@@ -93,20 +94,14 @@ const ServicesPage = ({
             const isEven = i % 2 === 0;
 
             return (
-              <section
-                key={i}
-                style={{ backgroundColor: p.bg, borderColor: p.border }}
-                className="border-b"
-              >
+              <section key={i} style={{ backgroundColor: p.bg }} className="">
                 <div
                   className={`grid grid-cols-1 lg:grid-cols-2 min-h-[420px]`}
                 >
                   {/* ── Left / Right: Content ────────────────────────────── */}
                   <div
-                    className={`flex flex-col justify-between p-10 md:p-16 border-b lg:border-b-0 ${
-                      isEven
-                        ? "lg:border-e order-1"
-                        : "lg:border-s order-1 lg:order-2"
+                    className={`flex flex-col justify-between p-10 md:p-16 ${
+                      isEven ? "order-1" : "order-1 lg:order-2"
                     }`}
                     style={{ borderColor: p.border }}
                   >

@@ -5,7 +5,7 @@ import { GithubIcon, WhatsappIcon, InstagramIcon } from "../ui/BrandIcons";
 
 const ContactSection = ({ personal, sections, lang }) => {
   return (
-    <section id="contact" className="pt-24 pb-12 md:py-24 px-6 md:px-12 border-t border-slate-100 bg-white">
+    <section id="contact" className="pt-24 pb-12 md:py-24 px-6 md:px-12 bg-white">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
         <div>
           <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-8 leading-[1.1] text-slate-900 flex flex-col items-start">
@@ -28,13 +28,13 @@ const ContactSection = ({ personal, sections, lang }) => {
         </div>
 
         <div className="flex flex-col items-start md:items-end gap-8">
-          <div className="flex gap-0 border border-slate-200 overflow-hidden">
+          <div className="flex gap-0 overflow-hidden">
             <Button
               href={personal.socials.github}
               external
               variant="social"
               shape="squareIcon"
-              className="border-e border-slate-200 hover-github"
+              className="hover-github"
               aria-label="GitHub Profile"
             >
               <GithubIcon className="w-5 h-5" />
@@ -44,7 +44,7 @@ const ContactSection = ({ personal, sections, lang }) => {
               external
               variant="social"
               shape="squareIcon"
-              className="border-e border-slate-200 hover-whatsapp"
+              className="hover-whatsapp"
               aria-label="WhatsApp"
             >
               <WhatsappIcon className="w-5 h-5" />

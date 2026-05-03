@@ -49,7 +49,7 @@ const HomePage = ({
       )}
 
       {/* Container */}
-      <div className="max-w-[1400px] mx-auto w-full border-x border-slate-200 min-h-screen flex flex-col">
+      <div className="max-w-[1400px] mx-auto w-full min-h-screen flex flex-col">
         {/* Navigation */}
         <Navbar
           personal={personal}
@@ -62,17 +62,17 @@ const HomePage = ({
         />
 
         <main className="flex-1">
-          <section className="relative overflow-hidden min-h-[calc(100dvh-76px)] border-b border-slate-200 bg-white flex items-center">
-            <div className="max-w-[1400px] mx-auto w-full grid grid-cols-1 md:grid-cols-[6fr_4fr] items-stretch min-h-[calc(100dvh-65px)]">
+          <section className="relative overflow-hidden min-h-[calc(100dvh-76px)] bg-white flex items-center">
+            <div className="max-w-[1400px] mx-auto w-full grid grid-cols-1 md:grid-cols-[6fr_4fr] items-stretch min-h-[calc(100dvh-65px)] relative z-10">
               {/* Left: Text Content */}
-              <div className="relative z-10 w-full flex items-center px-6 md:px-12 py-20 lg:py-0 md:border-e border-slate-200">
-                <div className="flex flex-col items-start text-start w-full max-w-4xl">
-                  <h2 className="text-[clamp(2.5rem,8vw,5rem)] font-black tracking-tighter leading-[1.1] mb-8 text-slate-900 text-balance">
+              <div className="relative z-10 w-full flex items-center px-6 md:px-12 py-20 lg:py-0">
+                <div className="flex flex-col items-center text-center md:items-start md:text-start w-full max-w-4xl">
+                  <h2 className="text-[clamp(1.75rem,5vw,3.5rem)] font-black tracking-tighter leading-[1.2] mb-8 text-slate-900 text-balance max-w-3xl mx-auto md:mx-0">
                     {hero.title.split("\n").map((line, i) => (
                       <span key={i} className="block w-full">
                         <TextBlock blockColor="#2563eb" className="block">
-                          {line.split(/(Code|الكود)/g).map((part, j) =>
-                            part === "Code" || part === "الكود" ? (
+                          {line.split(/(grow|تنمو)/g).map((part, j) =>
+                            part === "grow" || part === "تنمو" ? (
                               <span key={j} className="text-blue-600">
                                 {part}
                               </span>
@@ -85,7 +85,7 @@ const HomePage = ({
                     ))}
                   </h2>
 
-                  <div className="text-lg sm:text-xl lg:text-2xl text-slate-600 leading-tight font-medium mb-10 flex flex-col items-start gap-1 text-balance">
+                  <div className="text-lg sm:text-xl lg:text-2xl text-slate-600 leading-tight font-medium mb-10 flex flex-col items-center md:items-start gap-1 text-balance mx-auto md:mx-0">
                     <TextBlock
                       blockColor="#cbd5e1"
                       className="inline-block py-0"
@@ -94,7 +94,7 @@ const HomePage = ({
                     </TextBlock>
                   </div>
 
-                  <div className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto justify-start">
+                  <div className="flex flex-col sm:flex-row gap-6 w-full sm:w-auto justify-center md:justify-start">
                     <Button
                       href="#projects"
                       onClick={(e) => scrollToSection(e, "projects")}
@@ -107,12 +107,51 @@ const HomePage = ({
                     <Button
                       href="#contact"
                       onClick={(e) => scrollToSection(e, "contact")}
-                      variant="secondary"
+                      variant="outline"
                       size="lg"
                       className="px-10 py-4 text-lg"
                     >
                       {buttons.contactMe}
                     </Button>
+                  </div>
+                  {/* Social Proof */}
+                  <div className="mt-12 pt-8 flex flex-wrap w-full items-center justify-center md:justify-start gap-x-6 gap-y-4 sm:gap-x-8 text-sm font-semibold text-slate-600">
+                    <div className="flex items-center gap-2">
+                      <MaterialIcon
+                        icon="check_circle"
+                        size={18}
+                        className="text-blue-600"
+                      />
+                      <span>
+                        {lang === "ar"
+                          ? "3+ مشاريع مكتملة"
+                          : "3+ Completed Projects"}
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <MaterialIcon
+                        icon="speed"
+                        size={18}
+                        className="text-blue-600"
+                      />
+                      <span>
+                        {lang === "ar"
+                          ? "أركز على الأداء وتجربة المستخدم"
+                          : "Focus on Performance & UX"}
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <MaterialIcon
+                        icon="design_services"
+                        size={18}
+                        className="text-blue-600"
+                      />
+                      <span>
+                        {lang === "ar"
+                          ? "تصاميم مبنية وفق أفضل الممارسات"
+                          : "Best Practice Designs"}
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -131,7 +170,7 @@ const HomePage = ({
           </section>
 
           {/* Projects */}
-          <section id="projects" className="border-b border-slate-200">
+          <section id="projects">
             <div className="w-full">
               {/* Section Header */}
               <div className=" md:p-12 p-8">
@@ -143,7 +182,7 @@ const HomePage = ({
               </div>
 
               <ProjectHoverSection projects={projects.slice(0, 3)} />
-              <div className="py-12 px-6 md:px-12 border-t border-slate-200 flex justify-end rtl:justify-start md:justify-center md:rtl:justify-center">
+              <div className="py-12 px-6 md:px-12 flex justify-end rtl:justify-start md:justify-center md:rtl:justify-center">
                 <Link to="/projects">
                   <Button
                     variant="primary"
@@ -161,12 +200,12 @@ const HomePage = ({
           </section>
 
           {/* Skills & About */}
-          <section className="border-b border-slate-200">
+          <section>
             <div className="grid grid-cols-1 md:grid-cols-12">
               {/* About */}
               <div
                 id="about"
-                className="md:col-span-5 py-16 md:border-e border-slate-200 ps-6 md:ps-12 pe-12"
+                className="md:col-span-5 py-16 ps-6 md:ps-12 pe-12"
               >
                 <h3 className="text-sm font-bold uppercase tracking-widest text-slate-900 mb-8">
                   <TextBlock blockColor="#2563eb">{sections.about}</TextBlock>
@@ -200,7 +239,7 @@ const HomePage = ({
               {/* Skills */}
               <div
                 id="skills"
-                className="hidden md:block md:col-span-7 py-16 ps-12 pe-6 md:pe-12 border-t md:border-t-0 border-slate-200"
+                className="hidden md:block md:col-span-7 py-16 ps-12 pe-6 md:pe-12"
               >
                 <h3 className="text-sm font-bold uppercase tracking-widest text-slate-900 mb-8">
                   <TextBlock blockColor="#2563eb">
@@ -210,7 +249,7 @@ const HomePage = ({
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-12">
                   {expertise.slice(0, 4).map((item, i) => (
                     <div key={i}>
-                      <h4 className="font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 uppercase tracking-wide text-sm">
+                      <h4 className="font-bold text-slate-900 mb-4 pb-2 uppercase tracking-wide text-sm">
                         <TextBlock blockColor="#2563eb">
                           {item.category}
                         </TextBlock>
@@ -230,10 +269,10 @@ const HomePage = ({
           </section>
 
           {/* Services */}
-          <section id="services" className="border-b border-slate-200 bg-white">
+          <section id="services" className="bg-white">
             <div className="grid grid-cols-1 md:grid-cols-12">
               <div
-                className="md:col-span-3 py-8 md:py-16 md:border-e border-slate-200 ps-6 md:ps-12 pe-8 flex flex-row md:flex-col justify-between items-center md:items-start gap-4"
+                className="md:col-span-3 py-8 md:py-16 ps-6 md:ps-12 pe-8 flex flex-row md:flex-col justify-between items-center md:items-start gap-4"
                 dir="ltr"
               >
                 <h3 className="text-sm font-bold uppercase tracking-widest text-slate-900 md:mb-8">
@@ -282,7 +321,7 @@ const HomePage = ({
                   return (
                     <div
                       key={i}
-                      className="p-8 md:p-12 border-b md:border-b-0 md:border-e border-slate-200 last:border-e-0 last:border-b-0 cursor-pointer transition-all duration-500"
+                      className="p-8 md:p-12 cursor-pointer transition-all duration-500"
                       style={{ backgroundColor: palette.bg }}
                     >
                       <div className="mb-8">
@@ -315,7 +354,7 @@ const HomePage = ({
               </div>
 
               {/* Mobile Only: More Services Button */}
-              <div className="md:hidden py-12 px-6 border-t border-slate-200 flex justify-end rtl:justify-start md:justify-center md:rtl:justify-center">
+              <div className="md:hidden py-12 px-6 flex justify-end rtl:justify-start md:justify-center md:rtl:justify-center">
                 <Link to="/services">
                   <Button
                     variant="primary"

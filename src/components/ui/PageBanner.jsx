@@ -10,18 +10,8 @@ const PageBanner = ({
   lang = "ar",
 }) => {
   return (
-    <section className="relative py-24 px-6 md:px-12 border-b border-slate-200 overflow-hidden">
-      {backgroundImage && (
-        <div
-          className="absolute inset-0 z-0 pointer-events-none"
-          style={{
-            backgroundImage: `url(${backgroundImage})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            transform: lang === "en" ? "scaleX(-1)" : "none",
-          }}
-        />
-      )}
+    <section className="relative py-24 px-6 md:px-12 overflow-hidden">
+
 
       <div className="relative z-10 max-w-3xl">
         <h1 className="text-5xl md:text-7xl font-black tracking-tighter leading-tight text-slate-900 mb-8">

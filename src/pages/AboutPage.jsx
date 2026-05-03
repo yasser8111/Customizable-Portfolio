@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import MaterialIcon from "../components/ui/MaterialIcon";
-import NavBack from "../components/layout/NavBack";
+import { NavBack } from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import ContactSection from "../components/sections/ContactSection";
 import PageBanner from "../components/ui/PageBanner";
@@ -26,11 +26,12 @@ const AboutPage = ({
       dir={lang === "ar" ? "rtl" : "ltr"}
       className="min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-600 selection:text-white"
     >
-      <div className="max-w-[1400px] mx-auto w-full border-x border-slate-200 min-h-screen flex flex-col">
+      <div className="max-w-[1400px] mx-auto w-full min-h-screen flex flex-col">
         <NavBack
           onBack={() => navigate(-1)}
           backText={buttons.backToHome}
           lang={lang}
+          personal={personal}
         />
 
         <main className="flex-1">
@@ -43,10 +44,10 @@ const AboutPage = ({
           />
 
           {/* Detailed About & Skills */}
-          <section className="border-b border-slate-200">
+          <section>
             <div className="grid grid-cols-1 lg:grid-cols-12">
               {/* Left Column: Story */}
-              <div className="lg:col-span-7 py-16 px-6 md:px-12 lg:border-e border-slate-200">
+              <div className="lg:col-span-7 py-16 px-6 md:px-12">
                 <div className="flex items-center gap-3 mb-10 text-slate-400">
                   <MaterialIcon icon="lightbulb" size={20} />
                   <span className="text-xs font-bold uppercase tracking-[0.3em]">
@@ -122,7 +123,7 @@ const AboutPage = ({
                 <div className="space-y-12">
                   {expertise.map((item, i) => (
                     <div key={i}>
-                      <h4 className="text-sm font-black uppercase tracking-widest text-blue-600 mb-6 border-b border-slate-100 pb-2">
+                      <h4 className="text-sm font-black uppercase tracking-widest text-blue-600 mb-6 pb-2">
                         <TextBlock blockColor="#2563eb">
                           {item.category}
                         </TextBlock>

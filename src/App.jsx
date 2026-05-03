@@ -14,7 +14,7 @@ const ServicesPage = lazy(() => import("./pages/ServicesPage"));
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
 
 // Wrapper for Project Details to handle URL params
-const ProjectDetailsWrapper = ({ projects, lang, footerText, buttons }) => {
+const ProjectDetailsWrapper = ({ projects, lang, footerText, buttons, personal }) => {
   const { projectId } = useParams();
   const navigate = useNavigate();
   
@@ -37,6 +37,7 @@ const ProjectDetailsWrapper = ({ projects, lang, footerText, buttons }) => {
       lang={lang}
       footerText={footerText}
       buttons={buttons}
+      personal={personal}
     />
   );
 };
@@ -83,6 +84,39 @@ export default function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  // // Disable DevTools
+  // useEffect(() => {
+  //   const handleContextMenu = (e) => {
+  //     e.preventDefault();
+  //   };
+
+  //   const handleKeyDown = (e) => {
+  //     // F12
+  //     if (e.keyCode === 123) {
+  //       e.preventDefault();
+  //       return false;
+  //     }
+  //     // Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C
+  //     if (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67)) {
+  //       e.preventDefault();
+  //       return false;
+  //     }
+  //     // Ctrl+U
+  //     if (e.ctrlKey && e.keyCode === 85) {
+  //       e.preventDefault();
+  //       return false;
+  //     }
+  //   };
+
+  //   window.addEventListener("contextmenu", handleContextMenu);
+  //   window.addEventListener("keydown", handleKeyDown);
+
+  //   return () => {
+  //     window.removeEventListener("contextmenu", handleContextMenu);
+  //     window.removeEventListener("keydown", handleKeyDown);
+  //   };
+  // }, []);
+
   const handleLoadingComplete = () => {
     setIsLoading(false);
   };
@@ -105,8 +139,10 @@ export default function App() {
       <SmoothScroll>
         <div
           dir={lang === "ar" ? "rtl" : "ltr"}
-          className="min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-600 selection:text-white"
+          className="min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-600 selection:text-white relative"
         >
+
+
           <Preloader 
             isLoading={isLoading} 
             text={personal.name} 
@@ -161,6 +197,7 @@ export default function App() {
                   <AllProjectsPage
                     projects={projects}
                     lang={lang}
+                    personal={personal}
                     footerText={footer.text}
                     buttons={buttons}
                     nav={nav}
@@ -188,6 +225,7 @@ export default function App() {
                   <ProjectDetailsWrapper
                     projects={projects}
                     lang={lang}
+                    personal={personal}
                     footerText={footer.text}
                     buttons={buttons}
                   />

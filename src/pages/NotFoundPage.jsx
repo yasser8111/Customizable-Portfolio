@@ -58,7 +58,7 @@ const NotFoundPage = ({ lang, setLang, personal, nav, footer, buttons }) => {
       dir={lang === "ar" ? "rtl" : "ltr"}
       className="min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-600 selection:text-white"
     >
-      <div className="max-w-[1400px] mx-auto w-full border-x border-slate-200 min-h-screen flex flex-col">
+      <div className="max-w-[1400px] mx-auto w-full min-h-screen flex flex-col">
         <Navbar
           personal={personal}
           nav={nav}
