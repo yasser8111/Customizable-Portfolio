@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-import { createSlug } from "../../lib/utils";
+import { createSlug } from "../../lib/formatUtils";
 import { TextBlock } from "../ui/TextBlockEffect";
 
 // Simple utility to merge class names
