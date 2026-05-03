@@ -157,9 +157,9 @@ const ProjectHoverSection = ({
             <h2 className="text-2xl font-bold tracking-tight text-slate-900 mb-2">
               <TextBlock blockColor="#2563eb">{project.title}</TextBlock>
             </h2>
-            <p className="text-slate-500 text-base font-medium mb-6">
-              <TextBlock blockColor="#cbd5e1" className="block" textClassName="line-clamp-2 whitespace-normal">
-                {project.desc}
+            <p className="text-slate-500 text-base font-medium mb-6 leading-relaxed">
+              <TextBlock blockColor="#cbd5e1" className="block w-full" textClassName="whitespace-normal">
+                {project.desc.length > 85 ? project.desc.substring(0, 85) + "..." : project.desc}
               </TextBlock>
             </p>
             <div className="w-full aspect-video overflow-hidden border border-slate-400">

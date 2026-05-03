@@ -133,7 +133,7 @@ const Navbar = ({
               <div className="flex items-center gap-4 sm:hidden">
                 <button
                   onClick={() => setLang(lang === "en" ? "ar" : "en")}
-                  className="font-bold text-xs text-slate-600 hover:text-blue-600 bg-slate-50 border border-slate-200 px-3 py-1.5 transition-colors cursor-pointer flex items-center gap-1.5"
+                  className="font-bold text-xs text-slate-600 hover:text-blue-600 border border-slate-200 px-3 py-1.5 transition-colors cursor-pointer flex items-center gap-1.5"
                 >
                   <MaterialIcon icon="language" size={16} />
                   <span>{lang === "en" ? "العربية" : "EN"}</span>
