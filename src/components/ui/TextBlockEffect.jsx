@@ -16,7 +16,8 @@ export const TextBlock = ({
   blockColor = '#DDFC3E', 
   textColor = 'inherit', 
   fontFamily = 'inherit',
-  className = ''
+  className = '',
+  textClassName = ''
 }) => {
   const containerRef = useRef(null);
   const blockRef = useRef(null);
@@ -70,7 +71,7 @@ export const TextBlock = ({
       >
         <span 
           ref={textRef} 
-          className="relative z-10 block"
+          className={cn("relative z-10 block", textClassName)}
           style={{ color: textColor }}
         >
           {children}

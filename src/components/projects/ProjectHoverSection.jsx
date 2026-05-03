@@ -157,8 +157,8 @@ const ProjectHoverSection = ({
             <h2 className="text-2xl font-bold tracking-tight text-slate-900 mb-2">
               <TextBlock blockColor="#2563eb">{project.title}</TextBlock>
             </h2>
-            <p className="text-slate-500 text-base font-medium line-clamp-2 mb-6">
-              <TextBlock blockColor="#cbd5e1" className="block">
+            <p className="text-slate-500 text-base font-medium mb-6">
+              <TextBlock blockColor="#cbd5e1" className="block" textClassName="line-clamp-2 whitespace-normal">
                 {project.desc}
               </TextBlock>
             </p>
