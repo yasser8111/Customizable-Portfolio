@@ -216,18 +216,7 @@ const HomePage = ({
                     {about.text}
                   </TextBlock>
                 </p>
-                <ul className="space-y-4 mb-8">
-                  {about.points.map((point, i) => (
-                    <li key={i} className="flex gap-3 items-start text-base leading-relaxed text-slate-500">
-                      <div className="mt-1">
-                        <MaterialIcon icon="check" size={18} className="text-blue-600" />
-                      </div>
-                      <div>
-                        <strong className="text-slate-900">{point.title}</strong> {point.desc}
-                      </div>
-                    </li>
-                  ))}
-                </ul>
+
                 <div className="mt-10 flex justify-end" dir="ltr">
                   <Link to="/about">
                     <Button
