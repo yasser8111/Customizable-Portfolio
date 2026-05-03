@@ -1,5 +1,6 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
+import { createSlug } from "../lib/utils";
 import MaterialIcon from "../components/ui/MaterialIcon";
 import { NavBack } from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
@@ -63,6 +64,19 @@ const ServicesPage = ({
   sections,
 }) => {
   const navigate = useNavigate();
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const id = hash.replace("#", "");
+      const element = document.getElementById(id);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    }
+  }, [hash]);
 
   return (
     <div
@@ -94,7 +108,12 @@ const ServicesPage = ({
             const isEven = i % 2 === 0;
 
             return (
-              <section key={i} style={{ backgroundColor: p.bg }} className="">
+              <section
+                key={i}
+                id={createSlug(service.title)}
+                style={{ backgroundColor: p.bg }}
+                className="scroll-mt-20"
+              >
                 <div
                   className={`grid grid-cols-1 lg:grid-cols-2 min-h-[420px]`}
                 >
