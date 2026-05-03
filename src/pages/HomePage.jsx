@@ -30,6 +30,7 @@ const HomePage = ({
   nav,
   buttons,
   sections,
+  whyChooseMe,
   isUnderConstruction,
   isMenuOpen,
   setIsMenuOpen,
@@ -368,6 +369,33 @@ const HomePage = ({
                     {buttons.moreServices}
                   </Button>
                 </Link>
+              </div>
+            </div>
+          </section>
+
+          {/* Why Choose Me */}
+          <section className="bg-slate-50 py-20 px-6 md:px-12">
+            <div className="w-full">
+              <h3 className="text-sm font-bold uppercase tracking-widest text-slate-900 mb-12">
+                <TextBlock blockColor="#2563eb">
+                  {sections.whyChooseMe || "Why Choose Me?"}
+                </TextBlock>
+              </h3>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                {whyChooseMe && whyChooseMe.map((item, i) => (
+                  <div key={i} className="bg-white p-8 border border-slate-200 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 group">
+                    <div className="mb-6 h-12 w-12 bg-blue-50 text-blue-600 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <MaterialIcon icon={["touch_app", "bolt", "auto_awesome", "trending_up"][i % 4]} size={24} />
+                    </div>
+                    <h4 className="text-xl font-bold text-slate-900 mb-3 leading-tight">
+                      <TextBlock blockColor="#2563eb">{item.title}</TextBlock>
+                    </h4>
+                    <p className="text-slate-500 text-base font-medium leading-relaxed">
+                      {item.desc}
+                    </p>
+                  </div>
+                ))}
               </div>
             </div>
           </section>

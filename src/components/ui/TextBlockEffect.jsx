@@ -48,14 +48,14 @@ export const TextBlock = ({
 
         tl.to(blockRef.current, {
           scaleX: 1,
-          duration: 0.6,
+          duration: 0.4,
           ease: 'expo.inOut',
         })
         .set(textRef.current, { opacity: 1 })
         .to(blockRef.current, {
           scaleX: 0,
           transformOrigin: endOrigin,
-          duration: 0.6,
+          duration: 0.4,
           ease: 'expo.inOut',
         });
       }, 200);
@@ -94,37 +94,3 @@ const TextBlockEffect = ({ children }) => {
 };
 
 export default TextBlockEffect;
-
-// Demo component as requested
-export const TextBlockEffectDemo = () => (
-  <TextBlockEffect>
-    <section className="relative flex min-h-screen w-full items-center justify-center overflow-hidden px-8 bg-slate-950">
-      <TextBlock blockColor="#DDFC3E" textColor="#ededed">
-        We believe in the quiet power of ideas. The ones that sit with you long after you've looked away.
-      </TextBlock>
-    </section>
-
-    <section className="relative flex min-h-screen w-full items-center justify-center overflow-hidden px-8">
-      <img
-        src="https://images.pexels.com/photos/34034854/pexels-photo-34034854.jpeg"
-        alt=""
-        className="absolute inset-0 h-full w-full object-cover object-center"
-        style={{ filter: 'brightness(0.55) saturate(0.8)' }}
-      />
-      <div
-        className="pointer-events-none absolute inset-0"
-        style={{ backgroundColor: 'rgba(11, 11, 15, 0.5)' }}
-      />
-      <TextBlock blockColor="#DDFC3E" textColor="#ededed">
-        Some things are felt before they're understood. We craft those in-between moments — still,
-        sharp, and unforgettable.
-      </TextBlock>
-    </section>
-
-    <section className="relative flex min-h-screen w-full items-center justify-center overflow-hidden px-8 bg-slate-950">
-      <TextBlock blockColor="#DDFC3E" textColor="#ededed">
-        Not louder. Not faster. Just closer to something that actually matters.
-      </TextBlock>
-    </section>
-  </TextBlockEffect>
-);

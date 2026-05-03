@@ -72,6 +72,7 @@ export default function App() {
     gallery,
     philosophy,
     certificates,
+    whyChooseMe,
   } = portfolioData[lang];
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -166,6 +167,7 @@ export default function App() {
                     nav={nav}
                     buttons={buttons}
                     sections={sections}
+                    whyChooseMe={whyChooseMe}
                     isUnderConstruction={portfolioData.isUnderConstruction}
                     isMenuOpen={isMenuOpen}
                     setIsMenuOpen={setIsMenuOpen}
