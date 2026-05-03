@@ -85,7 +85,7 @@ const ServicesPage = ({
     >
       <div className="max-w-[1400px] mx-auto w-full min-h-screen flex flex-col">
         <NavBack
-          onBack={() => navigate("/")}
+          onBack={() => navigate(-1)}
           backText={buttons.backToHome}
           lang={lang}
           personal={personal}

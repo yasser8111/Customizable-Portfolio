@@ -67,7 +67,7 @@ const HomePage = ({
               {/* Left: Text Content */}
               <div className="relative z-10 w-full flex items-center px-4 md:px-12 py-12 lg:py-0">
                 <div className="flex flex-col items-center text-center md:items-start md:text-start w-full max-w-4xl">
-                  <h2 className="text-[clamp(2rem,6vw,4rem)] font-black tracking-tighter leading-[1.2] mb-8 text-slate-900 text-balance max-w-3xl mx-auto md:mx-0">
+                  <h2 className="text-[clamp(2rem,6vw,4rem)] font-black tracking-tighter leading-[1.2] mb-8 text-slate-900 md:text-balance max-w-3xl mx-auto md:mx-0">
                     {hero.title.split("\n").map((line, i) => (
                       <span key={i} className="block w-full">
                         <TextBlock blockColor="#2563eb" className="block">
@@ -85,7 +85,7 @@ const HomePage = ({
                     ))}
                   </h2>
 
-                  <div className="text-base sm:text-lg lg:text-xl text-slate-600 leading-relaxed font-medium mb-10 flex flex-col items-center md:items-start gap-1 text-balance mx-auto md:mx-0">
+                  <div className="text-base sm:text-lg lg:text-xl text-slate-600 leading-relaxed font-medium mb-10 flex flex-col items-center md:items-start gap-1 md:text-balance mx-auto md:mx-0">
                     <TextBlock
                       blockColor="#cbd5e1"
                       className="inline-block py-0"

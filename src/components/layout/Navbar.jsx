@@ -157,7 +157,7 @@ const Navbar = ({
           isMenuOpen ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <div className="flex flex-col items-center justify-center h-full gap-8 px-6 text-center">
+        <div className="grid grid-cols-2 place-content-center place-items-center h-full gap-y-12 gap-x-2 px-4 text-center">
           <a
             href="#"
             onClick={(e) => {
@@ -165,7 +165,7 @@ const Navbar = ({
               window.scrollTo({ top: 0, behavior: "smooth" });
               setIsMenuOpen(false);
             }}
-            className="text-3xl font-black tracking-tighter text-slate-900 uppercase"
+            className="text-xl sm:text-2xl font-black tracking-tighter text-slate-900 uppercase"
           >
             {isMenuOpen && (
               <TextBlock blockColor="#2563eb" className="block">
@@ -179,7 +179,7 @@ const Navbar = ({
               scrollToSection(e, "about");
               setIsMenuOpen(false);
             }}
-            className="text-3xl font-black tracking-tighter text-slate-900 uppercase"
+            className="text-xl sm:text-2xl font-black tracking-tighter text-slate-900 uppercase"
           >
             {isMenuOpen && (
               <TextBlock blockColor="#2563eb" className="block">
@@ -190,7 +190,7 @@ const Navbar = ({
           <Link
             to="/projects"
             onClick={() => setIsMenuOpen(false)}
-            className="text-3xl font-black tracking-tighter text-slate-900 uppercase"
+            className="text-xl sm:text-2xl font-black tracking-tighter text-slate-900 uppercase"
           >
             {isMenuOpen && (
               <TextBlock blockColor="#2563eb" className="block">
@@ -204,7 +204,7 @@ const Navbar = ({
               scrollToSection(e, "services");
               setIsMenuOpen(false);
             }}
-            className="text-3xl font-black tracking-tighter text-slate-900 uppercase"
+            className="text-xl sm:text-2xl font-black tracking-tighter text-slate-900 uppercase"
           >
             {isMenuOpen && (
               <TextBlock blockColor="#2563eb" className="block">
@@ -218,7 +218,7 @@ const Navbar = ({
               scrollToSection(e, "contact");
               setIsMenuOpen(false);
             }}
-            className="text-3xl font-black tracking-tighter text-slate-900 uppercase"
+            className="text-xl sm:text-2xl font-black tracking-tighter text-slate-900 uppercase col-span-2"
           >
             {isMenuOpen && (
               <TextBlock blockColor="#2563eb" className="block">

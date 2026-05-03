@@ -33,7 +33,7 @@ const ProjectDetailsWrapper = ({ projects, lang, footerText, buttons, personal }
   return (
     <ProjectDetailsPage
       project={project}
-      onBack={() => navigate("/projects")}
+      onBack={() => navigate(-1)}
       lang={lang}
       footerText={footerText}
       buttons={buttons}
