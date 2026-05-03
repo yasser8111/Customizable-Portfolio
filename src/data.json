@@ -138,17 +138,17 @@
       {
         "title": "Frontend Development",
         "desc": "Building fast, responsive, and accessible web interfaces with React and Tailwind CSS.",
-        "features": ["Interactive UIs", "Performance Tuning", "Responsive Design"]
+        "features": ["Interactive UIs", "Performance Tuning", "Responsive Design", "Accessibility (a11y)", "SEO Optimization", "Clean Architecture"]
       },
       {
         "title": "UI/UX to Code",
         "desc": "Converting Figma designs into pixel-perfect, high-performance web components.",
-        "features": ["Pixel Perfect", "Reusable Components", "Smooth Animations"]
+        "features": ["Pixel Perfect", "Reusable Components", "Smooth Animations", "Design System Integration", "Cross-Browser Support"]
       },
       {
         "title": "Chrome Extensions",
         "desc": "Developing custom browser tools to automate tasks and improve user productivity.",
-        "features": ["Task Automation", "System Integration", "Ongoing Maintenance"]
+        "features": ["Task Automation", "System Integration", "Ongoing Maintenance", "Content Scripts", "Background Processes", "API Integration"]
       }
     ],
     "footer": {
@@ -302,17 +302,17 @@
       {
         "title": "تطوير واجهات المستخدم",
         "desc": "بناء واجهات ويب سريعة ومتجاوبة باستخدام React و Tailwind CSS.",
-        "features": ["واجهات تفاعلية", "تحسين الأداء", "تصميم متجاوب"]
+        "features": ["واجهات تفاعلية", "تحسين الأداء", "تصميم متجاوب", "معايير إمكانية الوصول (a11y)", "تحسين محركات البحث", "كود نظيف وقابل للتطوير"]
       },
       {
         "title": "تحويل التصميم إلى كود",
         "desc": "تحويل تصاميم Figma بدقة بيكسل بيكسل إلى مكونات ويب عالية الأداء.",
-        "features": ["دقة بكسل", "مكونات قابلة لإعادة الاستخدام", "حركات سلسة"]
+        "features": ["دقة بكسل", "مكونات قابلة لإعادة الاستخدام", "حركات سلسة", "التوافق مع أنظمة التصميم", "دعم جميع المتصفحات"]
       },
       {
         "title": "إضافات المتصفح",
         "desc": "تطوير أدوات مخصصة للمتصفح لأتمتة المهام وزيادة الإنتاجية.",
-        "features": ["أتمتة المهام", "دمج الأنظمة", "صيانة مستمرة"]
+        "features": ["أتمتة المهام", "دمج الأنظمة", "صيانة مستمرة", "سكربتات المحتوى", "عمليات الخلفية", "ربط واجهات برمجة التطبيقات"]
       }
     ],
     "footer": {

@@ -148,7 +148,7 @@ const ServicesPage = ({
                       {sections.whatYouGet}
                     </h3>
 
-                    <ul className="space-y-6">
+                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-8">
                       {features.map((feat, j) => (
                         <li key={j} className="flex items-start gap-4">
                           {/* Accent dot */}
@@ -166,21 +166,6 @@ const ServicesPage = ({
                       ))}
                     </ul>
 
-                    {/* Decorative tag strip */}
-                    <div className="mt-10 flex flex-wrap gap-2">
-                      {features.map((feat, j) => (
-                        <span
-                          key={j}
-                          className="px-3 py-1 text-xs font-bold uppercase tracking-widest rounded-none"
-                          style={{
-                            backgroundColor: p.tag,
-                            color: p.tagText,
-                          }}
-                        >
-                          {feat}
-                        </span>
-                      ))}
-                    </div>
                   </div>
                 </div>
               </section>
