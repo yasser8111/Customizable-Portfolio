@@ -7,7 +7,7 @@ import ContactSection from "../components/sections/ContactSection";
 import PageBanner from "../components/ui/PageBanner";
 import { TextBlock } from "../components/ui/TextBlockEffect";
 import CardReveal from "../components/ui/CardReveal";
-import { renderFormattedText } from "../lib/formatUtils";
+
 
 
 
@@ -60,7 +60,7 @@ const AboutPage = ({
                 <div className="space-y-8">
                   <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-medium text-balance">
                     <TextBlock blockColor="#475569" className="block">
-                      {renderFormattedText(about.text)}
+                      {about.text}
                     </TextBlock>
                   </p>
                   

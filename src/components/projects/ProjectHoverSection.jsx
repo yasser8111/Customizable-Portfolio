@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-import { createSlug } from "../../lib/formatUtils";
+import { createSlug } from "../../lib/utils";
 import { TextBlock } from "../ui/TextBlockEffect";
 
 // Simple utility to merge class names
@@ -19,7 +19,7 @@ const ProjectHoverSection = ({
   const mousePos = useRef({ x: 0, y: 0 });
   const xTo = useRef();
   const yTo = useRef();
-  
+
   const [isDesktop, setIsDesktop] = useState(true);
   const [modal, setModal] = useState({ active: false, index: 0 });
   const activeRef = useRef(false);
@@ -46,16 +46,22 @@ const ProjectHoverSection = ({
 
   useGSAP(() => {
     if (!isDesktop || !modalRef.current) return;
-    
-    gsap.set(modalRef.current, { 
-      xPercent: -50, 
+
+    gsap.set(modalRef.current, {
+      xPercent: -50,
       yPercent: -50,
       x: mousePos.current.x,
-      y: mousePos.current.y
+      y: mousePos.current.y,
     });
 
-    xTo.current = gsap.quickTo(modalRef.current, "x", { duration: 0.6, ease: "power3.out" });
-    yTo.current = gsap.quickTo(modalRef.current, "y", { duration: 0.6, ease: "power3.out" });
+    xTo.current = gsap.quickTo(modalRef.current, "x", {
+      duration: 0.6,
+      ease: "power3.out",
+    });
+    yTo.current = gsap.quickTo(modalRef.current, "y", {
+      duration: 0.6,
+      ease: "power3.out",
+    });
 
     const updateTick = () => {
       if (activeRef.current) {
@@ -75,7 +81,7 @@ const ProjectHoverSection = ({
       scale: modal.active ? 1 : 0,
       opacity: modal.active ? 1 : 0,
       duration: 0.5,
-      ease: "expo.out"
+      ease: "expo.out",
     });
   }, [modal.active, isDesktop]);
 
@@ -158,8 +164,14 @@ const ProjectHoverSection = ({
               <TextBlock blockColor="#2563eb">{project.title}</TextBlock>
             </h2>
             <p className="text-slate-500 text-base font-medium mb-6 leading-relaxed">
-              <TextBlock blockColor="#cbd5e1" className="block w-full" textClassName="whitespace-normal">
-                {project.desc.length > 85 ? project.desc.substring(0, 85) + "..." : project.desc}
+              <TextBlock
+                blockColor="#cbd5e1"
+                className="block w-full"
+                textClassName="whitespace-normal"
+              >
+                {project.desc.length > 85
+                  ? project.desc.substring(0, 85) + "..."
+                  : project.desc}
               </TextBlock>
             </p>
             <div className="w-full aspect-video overflow-hidden border border-slate-400">

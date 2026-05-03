@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate, Link } from "react-router-dom";
-import { createSlug, renderFormattedText } from "../lib/formatUtils";
+import { createSlug } from "../lib/utils";
 import Button from "../components/ui/Button";
 import ProjectHoverSection from "../components/projects/ProjectHoverSection";
 import Navbar from "../components/layout/Navbar";
@@ -214,7 +214,7 @@ const HomePage = ({
                 </h3>
                 <p className="text-base md:text-lg leading-relaxed text-slate-500 mb-8 text-balance">
                   <TextBlock blockColor="#cbd5e1" className="block">
-                    {renderFormattedText(about.text)}
+                    {about.text}
                   </TextBlock>
                 </p>
 
