@@ -85,37 +85,37 @@ export default function App() {
   }, []);
 
   // Disable DevTools
-  useEffect(() => {
-    const handleContextMenu = (e) => {
-      e.preventDefault();
-    };
+  // useEffect(() => {
+  //   const handleContextMenu = (e) => {
+  //     e.preventDefault();
+  //   };
 
-    const handleKeyDown = (e) => {
-      // F12
-      if (e.keyCode === 123) {
-        e.preventDefault();
-        return false;
-      }
-      // Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C
-      if (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67)) {
-        e.preventDefault();
-        return false;
-      }
-      // Ctrl+U
-      if (e.ctrlKey && e.keyCode === 85) {
-        e.preventDefault();
-        return false;
-      }
-    };
+  //   const handleKeyDown = (e) => {
+  //     // F12
+  //     if (e.keyCode === 123) {
+  //       e.preventDefault();
+  //       return false;
+  //     }
+  //     // Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C
+  //     if (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67)) {
+  //       e.preventDefault();
+  //       return false;
+  //     }
+  //     // Ctrl+U
+  //     if (e.ctrlKey && e.keyCode === 85) {
+  //       e.preventDefault();
+  //       return false;
+  //     }
+  //   };
 
-    window.addEventListener("contextmenu", handleContextMenu);
-    window.addEventListener("keydown", handleKeyDown);
+  //   window.addEventListener("contextmenu", handleContextMenu);
+  //   window.addEventListener("keydown", handleKeyDown);
 
-    return () => {
-      window.removeEventListener("contextmenu", handleContextMenu);
-      window.removeEventListener("keydown", handleKeyDown);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("contextmenu", handleContextMenu);
+  //     window.removeEventListener("keydown", handleKeyDown);
+  //   };
+  // }, []);
 
   const handleLoadingComplete = () => {
     setIsLoading(false);
