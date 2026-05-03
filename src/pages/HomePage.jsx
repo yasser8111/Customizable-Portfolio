@@ -206,7 +206,7 @@ const HomePage = ({
               {/* About */}
               <div
                 id="about"
-                className="md:col-span-5 py-10 ps-4 md:ps-12 pe-4"
+                className="md:col-span-5 py-10 ps-4 md:ps-12 pe-4 flex flex-col"
               >
                 <h3 className="text-sm font-bold uppercase tracking-widest text-slate-900 mb-8">
                   <TextBlock blockColor="#2563eb">{sections.about}</TextBlock>
@@ -217,7 +217,7 @@ const HomePage = ({
                   </TextBlock>
                 </p>
 
-                <div className="mt-10 flex justify-end" dir="ltr">
+                <div className="mt-auto flex justify-end pt-10" dir="ltr">
                   <Link to="/about">
                     <Button
                       variant="outline"
