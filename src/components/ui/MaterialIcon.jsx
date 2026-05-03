@@ -24,4 +24,4 @@ const MaterialIcon = ({ icon, size = 20, className = "", style = {} }) => {
   );
 };
 
-export default MaterialIcon;
+export default React.memo(MaterialIcon);

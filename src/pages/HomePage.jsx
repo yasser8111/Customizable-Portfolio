@@ -163,6 +163,8 @@ const HomePage = ({
                 <img
                   src="/hero-img2.png"
                   alt="Hero"
+                  loading="eager"
+                  fetchpriority="high"
                   className="w-full h-full object-cover"
                 />
                 {/* Decorative overlay for premium feel */}

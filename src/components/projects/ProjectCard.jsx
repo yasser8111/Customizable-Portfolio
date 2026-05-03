@@ -38,4 +38,4 @@ const ProjectCard = ({ project, onSelectProject, isFirst = false }) => {
   );
 };
 
-export default ProjectCard;
+export default React.memo(ProjectCard);
