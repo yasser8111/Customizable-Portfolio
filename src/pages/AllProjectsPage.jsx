@@ -6,7 +6,7 @@ import Button from "../components/ui/Button";
 import { NavBack } from "../components/layout/Navbar";
 import ProjectCard from "../components/projects/ProjectCard";
 import ProjectsGallery from "../components/projects/ProjectsGallery";
-import { createSlug } from "../lib/utils";
+import { createSlug } from "../lib/formatUtils";
 
 const AllProjectsPage = ({ projects, lang, buttons, gallery, nav, personal }) => {
   const navigate = useNavigate();

@@ -7,7 +7,7 @@ import ContactSection from "../components/sections/ContactSection";
 import PageBanner from "../components/ui/PageBanner";
 import { TextBlock } from "../components/ui/TextBlockEffect";
 import CardReveal from "../components/ui/CardReveal";
-import { renderFormattedText } from "../lib/utils";
+import { renderFormattedText } from "../lib/formatUtils";
 
 
 

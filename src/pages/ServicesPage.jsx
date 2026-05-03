@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { createSlug } from "../lib/utils";
+import { createSlug } from "../lib/formatUtils";
 import MaterialIcon from "../components/ui/MaterialIcon";
 import { NavBack } from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";

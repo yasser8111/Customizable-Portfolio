@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, useNavigate, useParams, useLocation } fro
 import portfolioData from "./data.json";
 import SmoothScroll from "./components/layout/SmoothScroll";
 import Preloader from "./components/layout/Preloader";
-import { createSlug } from "./lib/utils";
+import { createSlug } from "./lib/formatUtils";
 
 // Lazy Load Pages for Performance
 const HomePage = lazy(() => import("./pages/HomePage"));

@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate, Link } from "react-router-dom";
-import { createSlug, renderFormattedText } from "../lib/utils";
+import { createSlug, renderFormattedText } from "../lib/formatUtils";
 import Button from "../components/ui/Button";
 import ProjectHoverSection from "../components/projects/ProjectHoverSection";
 import Navbar from "../components/layout/Navbar";
