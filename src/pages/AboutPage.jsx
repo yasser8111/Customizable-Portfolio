@@ -70,7 +70,7 @@ const AboutPage = ({
                   </span>
                 </div>
                 <div className="space-y-8">
-                  <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-medium">
+                  <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-medium text-balance">
                     <TextBlock blockColor="#475569" className="block">
                       {renderFormattedText(about.text)}
                     </TextBlock>

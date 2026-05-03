@@ -226,7 +226,7 @@ const HomePage = ({
                 <h3 className="text-sm font-bold uppercase tracking-widest text-slate-900 mb-8">
                   <TextBlock blockColor="#2563eb">{sections.about}</TextBlock>
                 </h3>
-                <p className="text-base md:text-lg leading-relaxed text-slate-500 mb-8">
+                <p className="text-base md:text-lg leading-relaxed text-slate-500 mb-8 text-balance">
                   <TextBlock blockColor="#cbd5e1" className="block">
                     {renderFormattedText(about.text)}
                   </TextBlock>
