@@ -34,7 +34,7 @@ export const TextBlock = ({
       const tl = gsap.timeline({
           scrollTrigger: {
             trigger: containerRef.current,
-            start: 'top 92%',
+            start: 'top 85%',
             toggleActions: 'play none none none',
             invalidateOnRefresh: true,
             once: true,
