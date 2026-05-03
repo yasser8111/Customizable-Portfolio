@@ -60,7 +60,7 @@ export const TextBlock = ({
             duration: 0.4,
             ease: "expo.inOut",
           });
-      }, 200);
+      }, 50);
 
       return () => clearTimeout(timer);
     },
